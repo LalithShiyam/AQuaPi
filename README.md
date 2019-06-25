@@ -21,7 +21,8 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based fully-automated comp
   - 3D time-of-flight MR angiography sequence
   - 60-min PET list-mode acquisition
   - 3D MPRAGE T1 MR sequence
-  - 3D EPI MR navigators    
+  - 3D EPI MR navigators  
+  - Attenuation map: preferrably CT or pseudo-CT
 
 # Literature
 
