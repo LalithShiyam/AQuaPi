@@ -1,7 +1,7 @@
 # AQuaPi
 
 AQuaPi: Absolute Quantification Pipeline, is a MATLAB based fully-automated computational framework, for non-invasively measuring cerebral metabolic rates of glucose using the synergistic data from a fully-integrated PET/MR.
-AQuaPi-Logo.png
+![AQuaPi-Logo](AQuaPi-Logo.png)
 # Abilities
 
 - Petrous segmentation from a 3D time-of-flight MR angiography
