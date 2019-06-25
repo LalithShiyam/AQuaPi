@@ -18,10 +18,10 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based fully-automated comp
 - MATLAB version > or = R2016a 
 - SPM 12 
 - Siemens Biograph mMR and e7 reconstruction tools
-  [1] 3D time-of-flight MR angiography sequence
-  [2] 60-min PET list-mode acquisition
-  [3] 3D MPRAGE T1 MR sequence
-  [4] 3D EPI MR navigators    
+  - 3D time-of-flight MR angiography sequence
+  - 60-min PET list-mode acquisition
+  - 3D MPRAGE T1 MR sequence
+  - 3D EPI MR navigators    
 
 # Literature
 
