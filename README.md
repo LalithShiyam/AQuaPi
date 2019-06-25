@@ -13,5 +13,5 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based fully-automated comp
 
 # Requirements
 
-- >= MATLAB R2016a 
+- MATLAB version > or = R2016a 
 - SPM 12 
