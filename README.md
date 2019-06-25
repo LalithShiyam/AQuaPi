@@ -1,6 +1,6 @@
 # AQuaPi
 
-AQuaPi: Absolute Quantification Pipeline, is a fully-automated computational framework, for non-invasively measuring cerebral metabolic rates of glucose using the data from a fully-integrated PET/MR.
+AQuaPi: Absolute Quantification Pipeline, is a fully-automated computational framework, for non-invasively measuring cerebral metabolic rates of glucose using the synergistic data from a fully-integrated PET/MR.
 
 Abilities:
 
