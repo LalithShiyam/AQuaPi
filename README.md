@@ -48,7 +48,7 @@ Table of Contents
   - 3D EPI MR navigators
   - Attenuation map: preferrably CT or pseudo-CT
 
-  ## Ideal PET/MR protocol 
+## Ideal PET/MR protocol 
 
 # Literature
 
