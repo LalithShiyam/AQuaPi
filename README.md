@@ -12,7 +12,7 @@ Table of Contents
   * [Literature](#Literature)
   * [Installation](#Installation)
   * [Usage](#Usage)
-    * [Automated segmentation](#Automated segmentation)
+    * [Automated segmentation](#Automated-segmentation)
    
   
   
