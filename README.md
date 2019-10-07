@@ -13,8 +13,13 @@ Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
     * [Automated segmentation](#Automated-segmentation)
-   
-  
+    * [MR-driven motion compensation](#MR-driven-motion-compensation)
+    * [Iterative regional partial volume correction](#Iterative-regional-partial-volume-correction)
+    * [Voxel-wise Patlak analysis](#Voxel-wise-Patlak-analysis)
+    * [Spatial normalisation](#Spatial-normalisation)
+    * [Z-Score calculation](#Z-Score-calculation)
+  * [Contributing](#Contributing)
+  * [Credits](#Credits)
   
 
 
