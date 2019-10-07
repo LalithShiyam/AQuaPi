@@ -9,6 +9,7 @@ Table of Contents
 
   * [Abilities](#Abilities)
   * [Requirements](#Requirements)
+     * [Ideal PET/MR protocol](#Ideal-PETMR-protocol)
   * [Literature](#Literature)
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -46,6 +47,8 @@ Table of Contents
   - 3D MPRAGE T1 MR sequence
   - 3D EPI MR navigators
   - Attenuation map: preferrably CT or pseudo-CT
+
+  ## Ideal PET/MR protocol 
 
 # Literature
 
