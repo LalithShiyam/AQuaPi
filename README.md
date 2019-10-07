@@ -15,14 +15,15 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based computational toolbo
 
 # Requirements
 
-- #Software
-- MATLAB version > or = R2016a 
-- SPM 12 
-- Siemens Biograph mMR and e7 reconstruction tools
-  - 3D time-of-flight MR angiography sequence (FOV dependent)
+- Software requirements
+  - MATLAB version > or = R2016a 
+  - SPM 12 
+  - Siemens e7 reconstruction tools
+- Input data: Refer to the individual pages for the suggested settings and corresponding limitations
+  - 3D time-of-flight MR angiography
   - 60-min PET list-mode acquisition
   - 3D MPRAGE T1 MR sequence
-  - 3D EPI MR navigators  (need to be in 'split' mode using Siemens SyngoVia)
+  - 3D EPI MR navigators
   - Attenuation map: preferrably CT or pseudo-CT
 
 # Literature
@@ -30,7 +31,3 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based computational toolbo
 - Shiyam Sundar LK, Muzik O, Beyer T. (2018). Towards quantitative [18F]FDG-PET/MRI of the brain: Automated MR-driven calculation of an image-derived input function for the non-invasive determination of cerebral glucose metabolic rates. Journal of Cerebral Blood Flow & Metabolism. https://doi.org/10.1177/0271678X18776820
 - Shiyam Sundar LK, Muzik O, Beyer T. (2019). The promise of fully-integrated PET/MR imaging: Non-invasive clinical quantification of cerebral glucose metabolism. The Journal of Nuclear Medicine. https://doi.org/10.2967/jnumed.119.229567
 
-# Wishlist
-
-- Using deep learning for segmentation instead of classical approaches.
-- List-mode based motion correction
