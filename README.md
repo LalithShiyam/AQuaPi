@@ -20,6 +20,7 @@ Table of Contents
     * [Z-Score calculation](#Z-Score-calculation)
   * [Contributing](#Contributing)
   * [Credits](#Credits)
+  * [License](#License)
   
 
 
