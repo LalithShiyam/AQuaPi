@@ -41,7 +41,7 @@ Table of Contents
   - SPM 12 
   - Siemens e7 reconstruction tools + JS-recon
   - Powershell ISE > 4.0
-- Input data: Refer to the individual pages for the suggested settings and corresponding limitations
+- Input data: Refer to the individual pages for detailed requirements.
   - 3D time-of-flight MR angiography
   - 60-min PET list-mode acquisition
   - 3D MPRAGE T1 MR sequence
