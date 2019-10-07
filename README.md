@@ -12,6 +12,8 @@ Table of Contents
   * [Literature](#Literature)
   * [Installation](#Installation)
   * [Usage](#Usage)
+    * [Automated segmentation](#Automated segmentation)
+   
   
   
 
@@ -30,7 +32,8 @@ Table of Contents
 - Software requirements
   - MATLAB version > or = R2016a 
   - SPM 12 
-  - Siemens e7 reconstruction tools
+  - Siemens e7 reconstruction tools + JS-recon
+  - Powershell ISE > 4.0
 - Input data: Refer to the individual pages for the suggested settings and corresponding limitations
   - 3D time-of-flight MR angiography
   - 60-min PET list-mode acquisition
