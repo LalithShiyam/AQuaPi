@@ -56,12 +56,12 @@ Table of Contents
 
 # Usage
 
-  ## Automated petrous/cervical segmentation
-  ## MR-driven motion compensation
-  ## Iterative regional partial volume correction
-  ## Voxel-wise Patlak analysis
-  ## Spatial normalisation
-  ## Z-score calculation
+  ### Automated petrous/cervical segmentation
+  ### MR-driven motion compensation
+  ### Iterative regional partial volume correction
+  ### Voxel-wise Patlak analysis
+  ### Spatial normalisation
+  ### Z-score calculation
 
 # Contributing
 
