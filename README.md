@@ -66,6 +66,7 @@ Table of Contents
   The segmentation algorithm has the ability to segment both the petrous and cervical region of the internal carotid arteries from the 3D time-of-flight MR angiography images in one go.
   #### Field-of-view
   ![	3D-TOF-MRA-FOV](3D-TOF-MRA-FOV.png)
+  #### Tips
   
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
