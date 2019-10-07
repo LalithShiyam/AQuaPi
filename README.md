@@ -67,6 +67,8 @@ Table of Contents
   #### Recommended field-of-view
   ![	3D-TOF-MRA-FOV](3D-TOF-MRA-FOV.png)
   #### Tips
+  1. Acquisition plane must be perpendicular to the blood flow in the internal carotid arteries. This ensures maximum contrast between the blood vessels and the surrounding tissues.
+  2. The imaging field-of-view should be larger than the imaging object. This would prevent wrap-around artifacts like the nose protruding through the back of the head.
   
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
