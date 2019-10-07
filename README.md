@@ -50,8 +50,8 @@ Table of Contents
 
 ## Ideal PET/MR protocol 
 
-![Ideal-PET:MR-protocol]
-(https://github.com/LalithShiyam/AQuaPi/Images/Ideal-PET:MR-protocol.png)
+![Ideal-protocol]
+(https://github.com/LalithShiyam/AQuaPi/Ideal-protocol.png)
 
 # Literature
 
