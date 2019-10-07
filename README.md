@@ -63,7 +63,10 @@ Table of Contents
 
   ### Automated petrous/cervical segmentation
   #### Overview
-  The segmentation algorithm has the ability to segment both the petrous and cervical region of the internal carotid arteries from the 3D time-of-flight MR angiography images in one go. Therefore, the field-of-view should included both petrous and cervical portion of the internal carotid arteries (refer the field-of-view shown below).
+  The segmentation algorithm has the ability to segment both the petrous and cervical region of the internal carotid arteries from the 3D time-of-flight MR angiography images in one go. 
+  #### Hard-requirements
+  - The field-of-view should include both petrous and cervical portion of the internal carotid arteries (refer the field-of-view shown below). 
+  - Patient position should be head first supine (HFS orientation)
   #### Recommended field-of-view
   ![	3D-TOF-MRA-FOV](3D-TOF-MRA-FOV.png)
   #### Tips
