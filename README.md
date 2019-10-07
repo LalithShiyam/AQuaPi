@@ -62,6 +62,7 @@ Table of Contents
 # Usage
 
   ### Automated petrous/cervical segmentation
+  The segmentation algorithm has the ability to segment both the petrous and cervical region of the internal carotid arteries from the 3D time-of-flight MR angiography images.
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
