@@ -12,7 +12,7 @@ Table of Contents
   * [Literature](#Literature)
   * [Installation](#Installation)
   * [Usage](#Usage)
-    * [Automated segmentation](#Automated-segmentation)
+    * [Automated petrous/cervical segmentation](#Automated-petrous/cervical-segmentation)
     * [MR-driven motion compensation](#MR-driven-motion-compensation)
     * [Iterative regional partial volume correction](#Iterative-regional-partial-volume-correction)
     * [Voxel-wise Patlak analysis](#Voxel-wise-Patlak-analysis)
@@ -27,7 +27,7 @@ Table of Contents
 # Abilities
 
 - Petrous/cervical segmentation from a 3D time-of-flight MR angiography dataset
-- MR driven motion correction (motion navigators needed): alignment of attenuation maps possible.
+- MR driven motion compensation (motion navigators needed): alignment of attenuation maps possible.
 - Iterative regional partial volume correction aware of the activity variations of the target and background.
 - Voxelwise Patlak analysis
 - Spatial normalisation (SPM12 DARTEL)
@@ -56,5 +56,10 @@ Table of Contents
 
 # Usage
 
-  ## Automated segmentation
+  ## Automated petrous/cervical segmentation
+  ## MR-driven motion compensation
+  ## Iterative regional partial volume correction
+  ## Voxel-wise Patlak analysis
+  ## Spatial normalisation
+  ## Z-score calculation
 
