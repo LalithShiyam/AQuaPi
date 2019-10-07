@@ -50,6 +50,8 @@ Table of Contents
 
 ## Ideal PET/MR protocol 
 
+![Ideal-PET/MR-protocol](#Ideal-PET:MR-protocol.png)
+
 # Literature
 
 - Shiyam Sundar LK, Muzik O, Beyer T. (2018). Towards quantitative [18F]FDG-PET/MRI of the brain: Automated MR-driven calculation of an image-derived input function for the non-invasive determination of cerebral glucose metabolic rates. Journal of Cerebral Blood Flow & Metabolism. https://doi.org/10.1177/0271678X18776820
