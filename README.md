@@ -56,5 +56,5 @@ Table of Contents
 
 # Usage
 
-  #Automated segmentation
+  ## Automated segmentation
 
