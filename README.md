@@ -72,9 +72,9 @@ Table of Contents
   #### Tips
   1. Acquisition plane must be perpendicular to the blood flow in the internal carotid arteries. This ensures maximum contrast between the blood vessels and the surrounding tissues.
   2. The imaging field-of-view should be larger than the imaging object. This would prevent wrap-around artifacts like the nose protruding through the back of the head.
-  #### Fail scenarios
+  #### The code breaks
   1. When there is a significant Signal drop in the blood vessels.
-  2. When there is severe wrap-around artifacts.
+  2. When there are severe wrap-around artifacts.
   
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
