@@ -15,7 +15,7 @@ Table of Contents
   * [Usage](#Usage)
     * [Automated petrous/cervical segmentation](#Automated-petrouscervical-segmentation)
     * [MR-driven motion compensation](#MR-driven-motion-compensation)
-    * [Iterative regional partial volume correction](#terative-regional-partial-volume-correction)
+    * [Iterative regional partial volume correction](#Iterative-regional-partial-volume-correction)
     * [Voxel-wise Patlak analysis](#Voxel-wise-Patlak-analysis)
     * [Spatial normalisation](#Spatial-normalisation)
     * [Z-Score calculation](#Z-Score-calculation)
@@ -50,7 +50,7 @@ Table of Contents
 
 ## Ideal PET/MR protocol 
 
-![Ideal-PET/MR-protocol](#/Images/Ideal-PET:MR-protocol.png)
+![Ideal-PET/MR-protocol](#./Images/Ideal-PET:MR-protocol.png)
 
 # Literature
 
