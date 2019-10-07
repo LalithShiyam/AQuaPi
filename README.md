@@ -8,7 +8,7 @@ AQuaPi: Absolute Quantification Pipeline, is a MATLAB based computational toolbo
 
 - Petrous/cervical segmentation from a 3D time-of-flight MR angiography dataset
 - MR driven motion correction (motion navigators needed): alignment of attenuation maps possible.
-- Iterative regional partial volume correction aware of spatiotemporal variations of the target and background activities
+- Iterative regional partial volume correction aware of the activity variations of the target and background.
 - Voxelwise Patlak analysis
 - Spatial normalisation (SPM12 DARTEL)
 - Z-score calculation
