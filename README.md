@@ -91,11 +91,12 @@ People responsible for awesome images:
 - Benedikt Schmiedinger Dipl. Radiologietechnologe
 - Julia Kesselbacher BSC Radiologietechnolgin
 
+
 # License
 
 MIT License
 
-Copyright (c) 2019 Lalith Kumar Shiyam Sundar
+Copyright (c) 2019 Lalith Kumar Shiyam Sundar, Quantitative Imaging and Medical Physics, Medical University of Vienna
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
