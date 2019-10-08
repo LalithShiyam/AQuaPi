@@ -86,6 +86,11 @@ Table of Contents
 
 # Credits
 
+People responsible for awesome images:
+
+- Benedikt Schmiedinger Dipl. Radiologietechnologe
+- Julia Kesselbacher BSC Radiologietechnolgin
+
 # License
 
 MIT License
