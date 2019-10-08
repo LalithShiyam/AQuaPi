@@ -75,6 +75,7 @@ Table of Contents
   #### The code breaks
   1. When there is a significant Signal drop in the blood vessels.
   2. When there are severe wrap-around artifacts.
+  #### Running the codes 
   
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
