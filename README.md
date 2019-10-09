@@ -1,4 +1,4 @@
-![AQuaPi-Logo](AQuaPi-Logo.png)
+![AQuaPi-Logo](Images/AQuaPi-Logo.png)
 
 # AQuaPi Toolbox
 
