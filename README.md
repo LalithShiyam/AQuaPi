@@ -20,6 +20,7 @@ Table of Contents
     * [Spatial normalisation](#Spatial-normalisation)
     * [Z-Score calculation](#Z-Score-calculation)
   * [Contributing](#Contributing)
+  * [Funding](#Funding) 
   * [Credits](#Credits)
   * [License](#License)
   
@@ -84,6 +85,10 @@ Table of Contents
   ### Z-score calculation
 
 # Contributing
+
+# Funding
+
+This work was supported by the Austrian Science Fund KLI482-B31. We would like to thank Nvidia Corporation for graciously supporting us with the Nvidia Titan Xp GPU for accelerating our workflow.
 
 # Credits
 
