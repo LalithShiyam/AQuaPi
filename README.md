@@ -1,4 +1,4 @@
-![AQuaPi-Logo](AQuaPi-Logo.png)
+![AQuaPi-Logo](Images/AQuaPi-Logo.png)
 
 # AQuaPi Toolbox
 
@@ -51,7 +51,7 @@ Table of Contents
 
 ## Ideal PET/MR protocol 
 
-![Ideal-protocol](Ideal-protocol.png)
+![Ideal-protocol](Images/Ideal-protocol.png)
 
 # Literature
 
@@ -69,11 +69,11 @@ Table of Contents
   - The field-of-view should include both petrous and cervical portion of the internal carotid arteries (refer the field-of-view shown below). 
   - Patient position should be head first supine (HFS orientation)
   #### Recommended field-of-view
-  ![	3D-TOF-MRA-FOV](3D-TOF-MRA-FOV.png)
+  ![	3D-TOF-MRA-FOV](Images/3D-TOF-MRA-FOV.png)
   #### Tips
   1. Acquisition plane must be perpendicular to the blood flow in the internal carotid arteries. This ensures maximum contrast between the blood vessels and the surrounding tissues.
   2. The imaging field-of-view should be larger than the imaging object. This would prevent wrap-around artifacts like the nose protruding through the back of the head.
-  ![Tips-MR-TOF](Tips-MR-TOF.png)
+  ![Tips-MR-TOF](Images/Tips-MR-TOF.png)
   #### The code breaks
   1. When there is a significant Signal drop in the blood vessels.
   2. When there are severe wrap-around artifacts.
