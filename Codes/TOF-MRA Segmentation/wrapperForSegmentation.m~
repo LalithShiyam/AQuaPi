@@ -1,0 +1,16 @@
+%% Purpose
+% This is a wrapper script for running the 'coreSegmentation.m' program, 
+% which is responsible for automatic petrous and cervical
+% segmentation.
+
+%% Author information
+
+% Lalith Kumar Shiyam Sundar, M.Sc.
+% Feb 05, 2016
+% Quantitative Imaging and Medical Physics, Medical University of Vienna
+
+%% Inputs                   
+%-------------------------------------------------------------------------%
+%                           Program Start 
+%-------------------------------------------------------------------------%
+
