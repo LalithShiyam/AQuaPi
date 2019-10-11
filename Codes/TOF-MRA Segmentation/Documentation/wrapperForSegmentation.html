@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Purpose</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-10-10"><meta name="DC.source" content="wrapperForSegmentation.m"><style type="text/css">
+      --><title>Purpose</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-10-11"><meta name="DC.source" content="wrapperForSegmentation.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,14 +66,28 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>Purpose</h1><!--introduction--><p>This is a wrapper script for running the 'coreSegmentation.m' program, which is responsible for automatic petrous and cervical segmentation.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Author information</a></li><li><a href="#2">Inputs</a></li><li><a href="#3">Limitations</a></li><li><a href="#4">Program start</a></li></ul></div><h2 id="1">Author information</h2><p>Lalith Kumar Shiyam Sundar, Quantitative Imaging and Medical Physics, Medical University of Vienna</p><h2 id="2">Inputs</h2><p>coreSegInputs.pathOfAngio - Physical path of the 3D time-of-flight MR angiography DICOM images.</p><h2 id="3">Limitations</h2><p>Only "DICOM" images are allowed - NIFTI support not included at this point in time, but will be added in due course.</p><h2 id="4">Program start</h2><pre class="codeinput"><span class="comment">% Copy your physical path of the 3D time-of-flight MR angiography DICOM</span>
-<span class="comment">% images.</span>
+  </style></head><body><div class="content"><h1>Purpose</h1><!--introduction--><p>This is a wrapper script for running the 'coreSegmentation.m' program, which is responsible for automatic petrous and cervical segmentation.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Author information</a></li><li><a href="#2">Inputs</a></li><li><a href="#3">Limitations</a></li><li><a href="#4">Program start</a></li><li><a href="#5">Hard-coded variables.</a></li><li><a href="#6">Preliminary checks are being done here, to see if the program can be run.</a></li></ul></div><h2 id="1">Author information</h2><p>Lalith Kumar Shiyam Sundar, Quantitative Imaging and Medical Physics, Medical University of Vienna</p><h2 id="2">Inputs</h2><p>coreSegInputs.pathOfAngio - Physical path of the 3D time-of-flight MR angiography DICOM images.</p><h2 id="3">Limitations</h2><p>Only "DICOM" images are allowed - NIFTI support not included at this point in time, but will be added in due course.</p><h2 id="4">Program start</h2><p>Copy your physical path of the 3D time-of-flight MR angiography DICOM images.</p><pre class="codeinput">coreSegInputs.pathOfAngio = <span class="string">''</span>; <span class="comment">% To be filled in by the user!</span>
+</pre><h2 id="5">Hard-coded variables.</h2><pre class="codeinput"><span class="comment">% Error messages</span>
 
-coreSegInputs.pathOfAngio = <span class="string">''</span>; <span class="comment">% To be filled in by the user!</span>
+errorMsg{1}=<span class="string">'This program needs a path to the "DICOM" series!'</span>;
+errorMsg{2}=<span class="string">'Raise an issue in github...'</span>;
 
-<span class="comment">% Running the coreSegmentation algorithm</span>
+<span class="comment">% path to store the data.</span>
 
-coreSegmentation(coreSegInputs);
+cd(coreSegInputs.pathOfAngio);
+cd <span class="string">..</span>
+coreSegInputs.path2StoreSeg=pwd; <span class="comment">% path where the output will be stored.</span>
+</pre><h2 id="6">Preliminary checks are being done here, to see if the program can be run.</h2><pre class="codeinput">fileFormat=checkFileFormat(coreSegInputs.pathOfAngio); <span class="comment">% check if the folder has dicom images.</span>
+<span class="keyword">switch</span> fileFormat
+    <span class="keyword">case</span> <span class="string">'DICOM'</span>
+        disp([<span class="string">'DICOM images found in '</span>,coreSegInputs.pathOfAngio,<span class="string">'...'</span>]);
+        disp(<span class="string">'Applying segmentation algorithm on the dataset...'</span>);
+        coreSegmentation(coreSegInputs); <span class="comment">% Running the coreSegmentation algorithm</span>
+
+    <span class="keyword">otherwise</span>
+        error(errorMsg{1});
+        error(errorMsg{2});
+<span class="keyword">end</span>
 </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Purpose
@@ -94,15 +108,41 @@ coreSegmentation(coreSegInputs);
 % point in time, but will be added in due course.
 
 %% Program start
-
 % Copy your physical path of the 3D time-of-flight MR angiography DICOM
 % images.
 
 coreSegInputs.pathOfAngio = ''; % To be filled in by the user!
 
-% Running the coreSegmentation algorithm
+%% Hard-coded variables.
 
-coreSegmentation(coreSegInputs);
+% Error messages
+
+errorMsg{1}='This program needs a path to the "DICOM" series!';
+errorMsg{2}='Raise an issue in github...';
+
+% path to store the data.
+
+cd(coreSegInputs.pathOfAngio); 
+cd .. 
+coreSegInputs.path2StoreSeg=pwd; % path where the output will be stored.
+
+
+%% Preliminary checks are being done here, to see if the program can be run.
+fileFormat=checkFileFormat(coreSegInputs.pathOfAngio); % check if the folder has dicom images.
+switch fileFormat 
+    case 'DICOM'
+        disp(['DICOM images found in ',coreSegInputs.pathOfAngio,'...']);
+        disp('Applying segmentation algorithm on the dataset...');
+        coreSegmentation(coreSegInputs); % Running the coreSegmentation algorithm
+        
+    otherwise
+        error(errorMsg{1});
+        error(errorMsg{2});
+end
+
+%%
+
+
 
 ##### SOURCE END #####
 --></body></html>
