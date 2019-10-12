@@ -81,7 +81,7 @@ Table of Contents
   #### The code breaks
   1. When there is a significant Signal drop in the blood vessels.
   2. When there are severe wrap-around artifacts.
-  #### Running the codes 
+  #### Running the codes : wrapperForSegmentation.m 
   ![Segmentation](Images/Segmentation.gif)
   ### Converting low-dose CT to CT-AC map
   #### Overview
@@ -92,14 +92,20 @@ Table of Contents
   - Dixon series is a hard-requirement.
   #### The code breaks
   Till now - never, fingers crossed!
-  #### Running the codes
+  #### Running the codes : wrapperGenerateCTAC.m
   ![CT2CTAC-2](Images/CT2CTAC-2.gif)
   ### MR-driven motion compensation
   #### Overview
   MR-navigator based motion correction, which, apart from PET data alignment, also aligns the attenuation maps (dynamic AC maps) with PET emission data.
-  #### [1] Alignment of AC maps with PET emission data.
-  This wrapper will rotate the attenuation maps based on the transformation matrices obtained from the MR Navigators. The sinogram headers from the JSRecon file is hacked to accomodate the different attenuation maps @ different time points using powershell: MoCoRecon.ps1.
+  #### [1] Alignment of AC maps with PET emission data
+  This wrapper will rotate the attenuation maps based on the transformation matrices obtained from the MR Navigators. The sinogram headers from the JSRecon file is hacked to accomodate the different attenuation maps at different time points using powershell: MoCoRecon.ps1.
+  #### Running the codes: wrapperForDynamicUmapRecon.m
   ![DynRecon-2](Images/DynRecon-2.gif)
+  
+  #### [2] Alignment of MR masks with the Reconstructed PET
+  The MR masks are aligned with the Reconstructed PET from above using the motion vectors from the MR navigators. Only the MR masks are rotated in this step, PET remains intact to prevent further Partial volume effects.
+  #### Running the codes: wrapperMoCo.m
+  ![mrMoco](Images/mrMoco.gif)
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
   ### Spatial normalisation
