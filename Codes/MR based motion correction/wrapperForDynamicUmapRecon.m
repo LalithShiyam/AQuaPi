@@ -1,3 +1,4 @@
+
 %% Purpose
 % This is a wrapper script for running the 'coreDynamicUmapRecon.m' program, 
 % which is responsible reconstructing the PET list-mode after the alignment
@@ -37,12 +38,12 @@
 
 % Fill in the required details
 
-DURinputs.subjectID= '';
-DURinputs.pathOfStaticACmaps= ''; 
-DURinputs.pathOfReconParamFile= '';
-DURinputs.pathOfDicomMRnavigators= '';
-DURinputs.pathToListModePET= '';
-DURinputs.pathToCopyReconPETdata = '';
+DURinputs.subjectID= 'HC002';
+DURinputs.pathOfStaticACmaps= '/Users/lalith/Documents/HC002/AC maps/CTAC'; 
+DURinputs.pathOfReconParamFile= '/Users/lalith/Documents/HC002/AC maps/Reconstruction parameter file';
+DURinputs.pathOfDicomMRnavigators= '/Users/lalith/Documents/HC002/AC maps/MR navigators';
+DURinputs.pathToListModePET= '/Users/lalith/Documents/HC002/AC maps/LM PET';
+DURinputs.pathToCopyReconPETdata = '/Users/lalith/Documents/HC002/AC maps/Recon PET';
 disp('Performing dynamic u-map PET LM reconstruction using JS-recon...')
 coreDynUmapReconstruction(DURinputs)
 

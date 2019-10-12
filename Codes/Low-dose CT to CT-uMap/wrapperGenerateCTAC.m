@@ -16,11 +16,10 @@
 % point in time, but will be added in due course.
 
 %% Program start
-% Copy your physical path of the 3D time-of-flight MR angiography DICOM
-% images.
+% Copy your physical path of the dicom images.
 
 umapGen.pathOfLowDoseCT='/Users/lalith/Documents/HC002/AC maps/Low-dose CT'; % To be filled in by the user!
 umapGen.pathOfDixonSeries = '/Users/lalith/Documents/HC002/AC maps/Dixon series'; % To be filled in by the user!
-umapGen.pathToStoreUmap = '/Users/lalith/Documents/HC002/AC maps/Low-dose CT'; % To be filled in by the user!
+umapGen.pathToStoreUmap = '/Users/lalith/Documents/HC002/AC maps/CTAC'; % To be filled in by the user!
 
 convertCTtoMRumap(umapGen); % Running the program.

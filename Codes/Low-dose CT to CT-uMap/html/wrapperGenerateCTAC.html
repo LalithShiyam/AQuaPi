@@ -68,9 +68,9 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
   </style></head><body><div class="content"><h1>Purpose</h1><!--introduction--><p>This is a wrapper script for running the 'convertCTtoMRumap.m' program, which converts a low-dose CT image to Siemens compatible CT-AC map.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Author information</a></li><li><a href="#2">Inputs to be entered by the user</a></li><li><a href="#3">Limitations</a></li><li><a href="#4">Program start</a></li></ul></div><h2 id="1">Author information</h2><p>Lalith Kumar Shiyam Sundar, Quantitative Imaging and Medical Physics, Medical University of Vienna</p><h2 id="2">Inputs to be entered by the user</h2><pre>       umapGen.pathOfLowDoseCT - path to the low dose CT dicom series
        umapGen.pathOfDixonSeries - path to the Dixon series (F, IN, OPP, W, U-map)
-       umapGen.pathToStoreUmap - where to store the u-maps.</pre><h2 id="3">Limitations</h2><p>Only "DICOM" images are allowed - NIFTI support not included at this point in time, but will be added in due course.</p><h2 id="4">Program start</h2><p>Copy your physical path of the 3D time-of-flight MR angiography DICOM images.</p><pre class="codeinput">umapGen.pathOfLowDoseCT=<span class="string">''</span>
-umapGen.pathOfDixonSeries = <span class="string">''</span>; <span class="comment">% To be filled in by the user!</span>
-umapGen.pathToStoreUmap = <span class="string">''</span>; <span class="comment">% To be filled in by the user!</span>
+       umapGen.pathToStoreUmap - where to store the u-maps.</pre><h2 id="3">Limitations</h2><p>Only "DICOM" images are allowed - NIFTI support not included at this point in time, but will be added in due course.</p><h2 id="4">Program start</h2><p>Copy your physical path of the dicom images.</p><pre class="codeinput">umapGen.pathOfLowDoseCT=<span class="string">'/Users/lalith/Documents/HC002/AC maps/Low-dose CT'</span>; <span class="comment">% To be filled in by the user!</span>
+umapGen.pathOfDixonSeries = <span class="string">'/Users/lalith/Documents/HC002/AC maps/Dixon series'</span>; <span class="comment">% To be filled in by the user!</span>
+umapGen.pathToStoreUmap = <span class="string">'/Users/lalith/Documents/HC002/AC maps/Low-dose CT'</span>; <span class="comment">% To be filled in by the user!</span>
 
 convertCTtoMRumap(umapGen); <span class="comment">% Running the program.</span>
 </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019a</a><br></p></div><!--
@@ -93,12 +93,11 @@ convertCTtoMRumap(umapGen); <span class="comment">% Running the program.</span>
 % point in time, but will be added in due course.
 
 %% Program start
-% Copy your physical path of the 3D time-of-flight MR angiography DICOM
-% images.
+% Copy your physical path of the dicom images.
 
-umapGen.pathOfLowDoseCT=''
-umapGen.pathOfDixonSeries = ''; % To be filled in by the user!
-umapGen.pathToStoreUmap = ''; % To be filled in by the user!
+umapGen.pathOfLowDoseCT='/Users/lalith/Documents/HC002/AC maps/Low-dose CT'; % To be filled in by the user!
+umapGen.pathOfDixonSeries = '/Users/lalith/Documents/HC002/AC maps/Dixon series'; % To be filled in by the user!
+umapGen.pathToStoreUmap = '/Users/lalith/Documents/HC002/AC maps/Low-dose CT'; % To be filled in by the user!
 
 convertCTtoMRumap(umapGen); % Running the program.
 ##### SOURCE END #####

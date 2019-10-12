@@ -128,10 +128,8 @@ for lp=1:length(dynamicFolders)
        eval(stringToRun); 
     end
 end
-cd(pathToCopyReconPETdata);
-cd ..
-pathOfNifti=pwd;
-constructDynPETseries(pathToCopyReconPETdata,pathOfNifti);
+cd(pathToCopyReconPETdata)'
+constructDynPETseries(pathToCopyReconPETdata,pathToCopyReconPETdata)
 end
 
 
