@@ -93,7 +93,7 @@ Table of Contents
   #### The code breaks
   Till now - never, fingers crossed!
   #### Running the codes
-  ![Low-dose-CT-to-CT-AC](Images/Low dose CT to CT-AC.gif)
+  ![CT2CTAC](Images/CT2CTAC.gif)
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
