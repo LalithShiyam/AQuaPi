@@ -105,7 +105,7 @@ Table of Contents
   #### [2] Alignment of MR masks with the Reconstructed PET
   The MR masks are aligned with the Reconstructed PET from above using the motion vectors from the MR navigators. Only the MR masks are rotated in this step, PET remains intact to prevent further Partial volume effects.
   #### Running the codes: wrapperMoCo.m
-  
+  ![mrMoco](Images/mrMoco.gif)
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
   ### Spatial normalisation
