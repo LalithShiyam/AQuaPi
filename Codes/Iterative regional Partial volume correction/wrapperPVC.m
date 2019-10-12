@@ -18,7 +18,7 @@
 %     PVC.whereToProcess= path where to process the PVC;
 
 %% Input parameters:
-    PVC.pathOfPET='';
+    PVC.pathOfPET=''; % Please fill in the physical paths of the input fields.
     PVC.pathOfhighResMask='';
     PVC.pathOfBrainMasks= '';
     PVC.pathOfpMoCohighResMask='';
