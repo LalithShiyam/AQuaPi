@@ -95,6 +95,9 @@ Table of Contents
   #### Running the codes
   ![CT2CTAC-2](Images/CT2CTAC-2.gif)
   ### MR-driven motion compensation
+  #### Overview
+  MR-navigator based motion correction, which, apart from PET data alignment, also aligns the attenuation maps (dynamic AC maps) with PET emission data.
+  #### [1] Alignment of AC maps with PET emission data.
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
   ### Spatial normalisation
