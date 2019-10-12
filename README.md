@@ -98,6 +98,7 @@ Table of Contents
   #### Overview
   MR-navigator based motion correction, which, apart from PET data alignment, also aligns the attenuation maps (dynamic AC maps) with PET emission data.
   #### [1] Alignment of AC maps with PET emission data.
+  This wrapper will rotate the attenuation maps based on the transformation matrices obtained from the MR Navigators. The sinogram headers from the JSRecon file is hacked to accomodate the different attenuation maps @ different time points using powershell: MoCoRecon.ps1.
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
   ### Spatial normalisation
