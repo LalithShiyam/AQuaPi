@@ -121,8 +121,12 @@ Table of Contents
   ### Voxel-wise Patlak analysis
   Motion vectors (MV’s) derived from the MR navigators were applied to the corresponding PET frames, resulting in motion-corrected PET frames (MoCo-PET). Following the spatial alignment, a voxel-wise Patlak graphical analysis (lumped constant, LC = 0.65) will be performed with it's respective input function.
  ![Patlak](Images/Patlak.png)
-    
+  #### Running the codes: wrapperPatlak.m
+  ![voxelPatlak](Images/voxelPatlak.gif)
   ### Spatial normalisation
+  For each subject, T1-w MR images were co-registered to their respective PET images. Individual T1-w MR image volumes were subsequently spatially normalized using the DARTEL (Diffeomorphic Anatomical Registration Through Exponentiated Lie algebra) software implemented in SPM 12. The resulting deformation fields were then applied to the co-registered CMRGlc images, thus, yielding a set of CMRGlc images that were transformed into template space. Once in template space, the set of CMRGlc images (n=20) defined a mean (μ) and SD (σ) map that constituted the NDB.
+  #### Running the codes: wrapperForNormDB.m
+  ![dartel](Images/dartel.gif)
   ### Z-score calculation
 
 # Contributing
