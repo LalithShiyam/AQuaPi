@@ -39,6 +39,7 @@ Table of Contents
 
 - Software requirements
   - MATLAB version > or = R2016a 
+  - Medical Image Reader and Viewer : https://www.mathworks.com/matlabcentral/fileexchange/53745-medical-image-reader-and-viewer
   - SPM 12 
   - Siemens e7 reconstruction tools + JS-recon
   - Powershell ISE > 4.0
