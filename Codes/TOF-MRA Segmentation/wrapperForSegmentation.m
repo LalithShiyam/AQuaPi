@@ -7,7 +7,7 @@
 % Lalith Kumar Shiyam Sundar, 
 % Quantitative Imaging and Medical Physics, Medical University of Vienna
 
-%% Inputs                   
+%% Inputs to be entered by the user                  
 % coreSegInputs.pathOfAngio - Physical path of the 3D time-of-flight MR
 % angiography DICOM images.
 
@@ -20,7 +20,7 @@
 % images.
 
 coreSegInputs.pathOfAngio = ''; % To be filled in by the user!
-
+coreSegInputs.patientCode = ''; % To be filled in by the user!
 %% Hard-coded variables.
 
 % Error messages
@@ -42,7 +42,6 @@ switch fileFormat
         disp(['DICOM images found in ',coreSegInputs.pathOfAngio,'...']);
         disp('Applying segmentation algorithm on the dataset...');
         coreSegmentation(coreSegInputs); % Running the coreSegmentation algorithm
-        
     otherwise
         error(errorMsg{1});
         error(errorMsg{2});
