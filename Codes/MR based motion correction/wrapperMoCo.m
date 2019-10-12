@@ -24,7 +24,7 @@
 
 %% Program start
 % Copy your physical path of the images
-pathPrefix='';
+pathPrefix=''; % Please fill in the physical paths of all the fields below.
 volunteerID='';
 mrMoCoInputs.pathOfDicomPET = '';
 mrMoCoInputs.pathOfMRnavigators ='';
