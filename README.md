@@ -70,7 +70,9 @@ Table of Contents
   ### Automated petrous/cervical segmentation
   #### Overview
   The segmentation algorithm has the ability to segment both the petrous and cervical region of the internal carotid arteries from the 3D time-of-flight MR angiography images in one go. 
+  
     ![	Segment](Images/Segment.png)
+    
   #### Hard-requirements
   - The field-of-view should include both petrous and cervical portion of the internal carotid arteries (refer the field-of-view shown below). 
   - Patient position should be head first supine (HFS orientation)
@@ -100,6 +102,8 @@ Table of Contents
   ### MR-driven motion compensation
   #### Overview
   MR-navigator based motion correction, which, apart from PET data alignment, also aligns the attenuation maps (dynamic AC maps) with PET emission data.
+    ![Moco](Images/Moco.png)
+    
   #### [1] Alignment of AC maps with PET emission data
   This wrapper will rotate the attenuation maps based on the transformation matrices obtained from the MR Navigators. The sinogram headers from the JSRecon file is hacked to accomodate the different attenuation maps at different time points using powershell: MoCoRecon.ps1.
   #### Running the codes: wrapperForDynamicUmapRecon.m
@@ -107,7 +111,6 @@ Table of Contents
   
   #### [2] Alignment of MR masks with the Reconstructed PET
   The MR masks are aligned with the Reconstructed PET from above using the motion vectors from the MR navigators. Only the MR masks are rotated in this step, PET remains intact to prevent further Partial volume effects.
-  ![Moco](Images/Moco.png)
   #### Running the codes: wrapperMoCo.m
   ![mrMoco](Images/mrMoco.gif)
   ### Iterative regional partial volume correction
@@ -117,7 +120,9 @@ Table of Contents
   ![iPVC](Images/iPVC.gif)
   ### Voxel-wise Patlak analysis
   Motion vectors (MV’s) derived from the MR navigators were applied to the corresponding PET frames, resulting in motion-corrected PET frames (MoCo-PET). Following the spatial alignment, a voxel-wise Patlak graphical analysis (lumped constant, LC = 0.65) will be performed with it's respective input function.
+  
     ![Patlak](Images/Patlak.png)
+    
   ### Spatial normalisation
   ### Z-score calculation
 
