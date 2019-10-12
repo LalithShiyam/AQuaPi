@@ -43,7 +43,7 @@
 %                           Program Start 
 %-------------------------------------------------------------------------%
 
-function []=performMRbasedMOCO(mrMoCoInputs)
+function []=coreMRbasedMOCO(mrMoCoInputs)
 
 %% Create a folder called MoCo
 cd(mrMoCoInputs.pathToStoreMoCoAnalysis);

@@ -34,6 +34,6 @@ mrMoCoInputs.pathOfT1mr='';
 mrMoCoInputs.pathOfDixonInPhase='';
 mrMoCoInputs.pathOfTOFMRA='';
 mrMoCoInputs.pathOfNiftiPET ='';
-performMRbasedMOCO(mrMoCoInputs);
+coreMRbasedMOCO(mrMoCoInputs); % Running the core MR based moco program.
 
  
