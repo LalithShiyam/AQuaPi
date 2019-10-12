@@ -112,6 +112,7 @@ Table of Contents
   #### Running the codes: wrapperPVC.m
   ![iPVC](Images/iPVC.gif)
   ### Voxel-wise Patlak analysis
+  Motion vectors (MV’s) derived from the MR navigators were applied to the corresponding PET frames, resulting in motion-corrected PET frames (MoCo-PET). Following the spatial alignment, a voxel-wise Patlak graphical analysis (lumped constant, LC = 0.65) will be performed with it's respective input function.
   ### Spatial normalisation
   ### Z-score calculation
 
