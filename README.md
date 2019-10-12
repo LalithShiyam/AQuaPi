@@ -14,6 +14,7 @@ Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
     * [Automated petrous/cervical segmentation](#Automated-petrouscervical-segmentation)
+    * [Converting low-dose CT to CT-AC](#Converting low-dose CT to CT-AC)
     * [MR-driven motion compensation](#MR-driven-motion-compensation)
     * [Iterative regional partial volume correction](#terative-regional-partial-volume-correction)
     * [Voxel-wise Patlak analysis](#Voxel-wise-Patlak-analysis)
@@ -29,6 +30,7 @@ Table of Contents
 # Abilities
 
 - Petrous/cervical segmentation from a 3D time-of-flight MR angiography dataset
+- Conversion of a low-dose CT image to CT-AC using carney bilinear scaling
 - MR driven motion compensation (motion navigators needed): alignment of attenuation maps possible.
 - Iterative regional partial volume correction aware of the activity variations of the target and background.
 - Voxelwise Patlak analysis
@@ -81,7 +83,17 @@ Table of Contents
   2. When there are severe wrap-around artifacts.
   #### Running the codes 
   ![Segmentation](Images/Segmentation.gif)
-  
+  ### Converting low-dose CT to CT-AC map
+  #### Overview
+  This function enables the conversion of low dose CT images to PET/MR compatible CT attenuation maps You can also use this program to strip off the pixel data from the dicom header if you use the last section :)
+  #### Hard-requirements
+  - Should be Siemens low-dose CT, however, this can be tweaked with a bit of effort.
+  - Patient position should be head first supine (HFS orientation)
+  - Dixon series is a hard-requirement.
+  #### The code breaks
+  Till now - never, fingers crossed!
+  #### Running the codes
+  ![Tips-MR-TOF](Images/Tips-MR-TOF.png)
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
   ### Voxel-wise Patlak analysis
