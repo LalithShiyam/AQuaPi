@@ -38,21 +38,21 @@ function []=coreDynUmapReconstruction(DURinputs)
 
 
 cd(DURinputs.pathOfStaticACmaps);
-iRAM.pathOfStaticAC=DURinputs.pathOfStaticACmaps;
-iRAM.pathOfMRnavigators=DURinputs.pathOfDicomMRnavigators;
-cd(iRAM.pathOfMRnavigators); % go to the MR navigator folder 
+genMIUmaps.pathOfStaticAC=DURinputs.pathOfStaticACmaps;
+genMIUmaps.pathOfMRnavigators=DURinputs.pathOfDicomMRnavigators;
+cd(genMIUmaps.pathOfMRnavigators); % go to the MR navigator folder 
 fNames=dir; % read the folders inside the mr navigator folder
 fNames=fNames(arrayfun(@(x) x.name(1), fNames) ~= '.'); % read volunteer folders
 if isempty(fNames) % check if the folder has mr navigators % if there are none, simply proceed.
    disp('No MR navigators found for this subject!'); 
 else 
    disp('MR navigators found, rotating attenuation maps...'); 
-   idifRotateACmaps(iRAM); % if there are mr navigators, use the idifRotateACmaps program to obtain motion induced ac maps
+   generateMotionImposedUmaps(genMIUmaps); % if there are mr navigators, use the idifRotateACmaps program to obtain motion induced ac maps
 end
 
 %% reading the paths of dynamic u-maps
 
-cd(iRAM.pathOfStaticAC); 
+cd(genMIUmaps.pathOfStaticAC); 
 cd .. 
 dynamicFolder=dir('Dynamic*');
 pathOfDynamicFolder=[pwd,filesep,dynamicFolder.name];
@@ -108,7 +108,7 @@ for lp=1:length(dynamicFolders)
     samePatient=['"',samePatient,'"'];
    % Calling the reconstruction powershell script for volunteers
     % without MR navigators.
-    cd(iRAM.pathOfMRnavigators)
+    cd(genMIUmaps.pathOfMRnavigators)
     fNames=dir;
     fNames=fNames(arrayfun(@(x) x.name(1), fNames) ~= '.'); % read volunteer folders
     prefixPowShellScript=['!powershell -executionPolicy bypass ". ']; % with dot sourcing.

@@ -28,13 +28,17 @@
 %% Limitations
 % Only "SPLIT" EPI images are allowed - Mosaic images support not included at this
 % point in time, but will be added in due course.
+% Only CT/Dixon/UTE/PseudoCT/Resolute Rotation is possible at this point, support to other AC
+% maps will be implemented in due course.
+
+
 
 %% Program start
 
 % Fill in the required details
 
 DURinputs.subjectID= '';
-DURinputs.pathOfStaticACmaps= '';
+DURinputs.pathOfStaticACmaps= ''; 
 DURinputs.pathOfReconParamFile= '';
 DURinputs.pathOfDicomMRnavigators= '';
 DURinputs.pathToListModePET= '';
