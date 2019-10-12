@@ -19,8 +19,9 @@
 % Copy your physical path of the 3D time-of-flight MR angiography DICOM
 % images.
 
-coreSegInputs.pathOfAngio = ''; % To be filled in by the user!
-coreSegInputs.patientCode = ''; % To be filled in by the user!
+coreSegInputs.pathOfAngio = '/Users/lalith/Documents/HC002/MR-TOF'; % To be filled in by the user!
+coreSegInputs.patientCode = 'HC002'; % To be filled in by the user!
+
 %% Hard-coded variables.
 
 % Error messages
@@ -38,7 +39,7 @@ coreSegInputs.path2StoreSeg=pwd; % path where the output will be stored.
 %% Preliminary checks are being done here, to see if the program can be run.
 fileFormat=checkFileFormat(coreSegInputs.pathOfAngio); % check if the folder has dicom images.
 switch fileFormat 
-    case 'DICOM'
+    case 'Dicom'
         disp(['DICOM images found in ',coreSegInputs.pathOfAngio,'...']);
         disp('Applying segmentation algorithm on the dataset...');
         coreSegmentation(coreSegInputs); % Running the coreSegmentation algorithm
