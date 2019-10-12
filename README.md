@@ -14,7 +14,7 @@ Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
     * [Automated petrous/cervical segmentation](#Automated-petrouscervical-segmentation)
-    * [Converting low-dose CT to CT-AC](#Converting low-dose CT to CT-AC)
+    * [Converting low-dose CT to CT-AC map](#Converting low-dose CT to CT-AC map)
     * [MR-driven motion compensation](#MR-driven-motion-compensation)
     * [Iterative regional partial volume correction](#terative-regional-partial-volume-correction)
     * [Voxel-wise Patlak analysis](#Voxel-wise-Patlak-analysis)
