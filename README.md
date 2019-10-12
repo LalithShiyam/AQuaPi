@@ -37,6 +37,8 @@ Table of Contents
 - Spatial normalisation (SPM12 DARTEL)
 - Z-score calculation
 
+![AQuaPi-abilities](Images/AQuaPi-abilities.png)
+
 # Requirements
 
 - Software requirements
