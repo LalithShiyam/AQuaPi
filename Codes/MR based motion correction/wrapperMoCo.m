@@ -15,7 +15,8 @@
 %mrMoCoInputs.pathOfT1mr=path of T1 MR
 %mrMoCoInputs.pathOfDixonInPhase=path of Dixon in-phase
 %mrMoCoInputs.pathOfTOFMRA=path of TOF-MRA
-%mrMoCoInputs.pathOfNiftiPET = Path of SPM converted nifty pet.
+%mrMoCoInputs.pathOfNiftiPET = Path of SPM converted nifty pet using
+%"constructDynPETseries.m"
 
 %% Limitations
 % Only "DICOM" images are allowed - NIFTI support not included at this
@@ -23,7 +24,8 @@
 
 %% Program start
 % Copy your physical path of the 3D time-of-flight MR angiography DICOM
-% images.
+% images
+pathPrefix=['user/Documents/data-analysis'];
 mrMoCoInputs.pathOfDicomPET = [pathPrefix,volunteerID,'/Processed data/Reconstructed PET/MoCo_Recons_PET_CT'];
 mrMoCoInputs.pathOfMRnavigators =[pathPrefix,volunteerID,'/Processed data/MR navigators'];
 mrMoCoInputs.pathOfDICOMMRmask=[pathPrefix,volunteerID,'/Processed data/MR scaled petrous'];
