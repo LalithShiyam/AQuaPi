@@ -80,6 +80,7 @@ Table of Contents
   1. When there is a significant Signal drop in the blood vessels.
   2. When there are severe wrap-around artifacts.
   #### Running the codes 
+  ![segmentation](Images/segmentation.gif)
   
   ### MR-driven motion compensation
   ### Iterative regional partial volume correction
