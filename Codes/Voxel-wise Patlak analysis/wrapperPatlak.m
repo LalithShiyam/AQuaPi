@@ -28,7 +28,7 @@
 %% Program start
 % Copy your physical path of the 3D time-of-flight MR angiography DICOM
 % images.
-plasmaGlucose='' % units mmol/L
+plasmaGlucose='' % units mmol/L % please fill in the input parameters accordingly.
 patlakInputs.cutOff= '' % time in seconds.
 patlakInputs.voxelWise=1;
 patlakInputs.file2Delete='';
