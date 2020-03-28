@@ -65,6 +65,13 @@ Table of Contents
 
 # Installation
 
+- Download all the AQuaPi folder from GitHub.
+- Copy the contents to the MATLAB folder present in your system.
+- Open the MATLAB console and go to the directory containing the 'MATLAB' folder.
+- In the "Current Folder" of your MATLAB console, the directory containing the 'MATLAB' folder should be visible. 
+- Right-click the 'MATLAB' folder from your MATLAB console, and choose 'Add to Path->select folders and subfolders'
+- Now you can summon all the functions from AQuaPi.
+
 # Usage
 
   ### Automated petrous/cervical segmentation
