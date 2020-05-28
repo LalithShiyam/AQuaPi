@@ -1,4 +1,4 @@
-%-------------------------------------------------------------------------%
+ %-------------------------------------------------------------------------%
 % This is a function which alings the MR time of angiography mask to the
 % PET frames, based on the motion vector fields obtained from the MR
 % navigators (which are approximated to be in correspondence with their
