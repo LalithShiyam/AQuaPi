@@ -22,7 +22,7 @@ function []=coreSegmentation(coreSegInputs)
 %% Hard-coded variables: change it according to your needs.
 
 upperSliceLimit = 175;
-quantileVal     = 0.985; % play around with this value for over or under segmentation
+quantileVal     = 0.998; % play around with this value for over or under segmentation
 wrapPrevention  = 50; 
 
 %% Logic start
@@ -160,7 +160,7 @@ seedMatrix=[r,c];
 seedMatrix=[seedMatrix,round(size(orgVol,3)*0.5)*ones(size(seedMatrix,1),1)];
 bVol=zeros(size(orgVol));       
 
-for lp=1:size(seedMatrix,1)
+parfor lp=1:size(seedMatrix,1)
     [~,maskOfInt]=regionGrowing(qMask,seedMatrix(lp,:));
     bVol=bVol+maskOfInt;
 end
@@ -236,8 +236,9 @@ curveOfInterest=CoWDetectorInputs.curveOfInterest;
 bVol=CoWDetectorInputs.bVol;
 limit=round(0.65*length(curveOfInterest));
 temp=zeros(size(curveOfInterest));
-tempNMI=zeros(size(curveOfInterest));
-tempNMI(limit:end)=curveOfInterest(limit:end);
+% tempNMI=zeros(size(curveOfInterest));
+% tempNMI(limit:end)=curveOfInterest(limit:end);
+tempNMI=curveOfInterest;
 smoothTempNMI=sgolayfilt(tempNMI,4,15);
 
 %% Major axis length - might be the salvation - check.
@@ -288,7 +289,7 @@ smoothMajorMinor(endInfo+1:size(bVol,3))=0;
 
 % Morphometric analysis
 
-curveOfInterest=temp.*tempNMI;
+curveOfInterest=tempNMI;
 smoothCOI=sgolayfilt(curveOfInterest,4,7); % filter length changed from 15 to 7
 smoothCOI(isnan(smoothCOI))=0;
 curveOfInterest=smoothCOI.*smoothMajorMinor;
@@ -331,20 +332,20 @@ probCavernous=OrientationOfPetrous(idx,1);
 probCavernous=sort(probCavernous,'ascend');
 probPetrousRegion=OrientationOfPetrous(~idx,1);
 probPetrousRegion=sort(probPetrousRegion,'ascend');
-
+probCavernous=probCavernous(end);
 % calculating the slopes 
 
-curveForGradCalc=zeros(size(CurveOfInterest));
-curveForGradCalc(probCavernous:end)=CurveOfInterest(probCavernous:end);
+curveForGradCalc=zeros(size(curveOfInterest));
+curveForGradCalc(probCavernous:end)=curveOfInterest(probCavernous:end);
 slopeValues=diff(curveForGradCalc);
 gradChange=sign(slopeValues);
 gradChange(isnan(gradChange))=0;
 
 for lp=probCavernous:size(gradChange,2)
-    if GradChange(lp)< 0
+    if gradChange(lp)< 0
        endPointVolume= lp;
     else
-        break
+        brceak
     end
 end
 

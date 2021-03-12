@@ -19,8 +19,8 @@
 % Copy your physical path of the 3D time-of-flight MR angiography DICOM
 % images.
 
-coreSegInputs.pathOfAngio = '/Users/lalith/Documents/HC002/MR-TOF'; % To be filled in by the user!
-coreSegInputs.patientCode = 'HC002'; % To be filled in by the user!
+coreSegInputs.pathOfAngio = '/Users/lalithsimac/Documents/Projects/Shanghai-AquaPi-collab/du_you_xue/MRA/MRA'; % To be filled in by the user!
+coreSegInputs.patientCode = 'SH-01'; % To be filled in by the user!
 
 %% Hard-coded variables.
 
